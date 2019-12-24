@@ -4,12 +4,34 @@
   "description": "local building",
   "main": "index.js",
   "scripts": {
+    "gulp": "gulp",
+    "gulp-watch": "gulp watch",
+    "babel": "babel src/js -d build/js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "local",
     "build"
   ],
+  "browserslist": [
+    "last 5 version",
+    "> 1%"
+  ],
   "author": "liuchuanyang65",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^9.7.3",
+    "gulp": "^4.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "del": "^5.1.0",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.2.0",
+    "gulp-less": "^4.0.1"
+  }
 }
